@@ -1,9 +1,6 @@
 ---
 layout: default
-<!-- title: John Cassidy -->
+title: John Cassidy
 ---
 
 ## Stay classy, San Diego.
-
-* Stay
-* classy
