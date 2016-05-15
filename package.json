@@ -1,0 +1,22 @@
+{
+  "name": "jc-portfolio",
+  "version": "0.0.1",
+  "description": "portfolio site for John",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnpatrickcassidy/johnpatrickcassidy.git"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "John Cassidy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/johnpatrickcassidy/johnpatrickcassidy/issues"
+  },
+  "homepage": "https://github.com/johnpatrickcassidy/johnpatrickcassidy#readme"
+}
