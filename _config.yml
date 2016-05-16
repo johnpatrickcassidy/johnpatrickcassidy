@@ -17,3 +17,9 @@ github_username:  johnpatrickcassidy
 
 # Build settings
 markdown: kramdown
+
+#By default, Jekyll copies all folders in the source that don’t have a leading underscore, so it will copy over the node_modules directory to your _site build folder. To avoid this, exclude node_modules from processing by adding exclude: ['node_modules'] to your _config.yml file.
+exclude: ['node_modules', ‘css’, ‘_scss’]
+
+# tell Jekyll not to erase the CSS directory in the _site output folder each time it rebuilds by adding this to _config.yml
+keep_files: ['_site/css']
