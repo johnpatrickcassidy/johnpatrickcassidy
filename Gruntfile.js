@@ -24,9 +24,16 @@ module.exports = function(grunt) {
 
       // watch for files to change and run tasks when they do
       watch: {
+        // options: {
+        //   livereload: true
+        // },
         sass: {
           files: ['_sass/**/*.{scss,sass}'],
-          tasks: ['sass']
+          tasks: ['sass', "shell:jekyllBuild"]
+        },
+        site: {
+          files: ["index.html", "_layouts/*.html", "_posts/*.md", "_includes/*.html"],
+          tasks: ["shell:jekyllBuild"]
         }
       },
 
@@ -55,7 +62,8 @@ module.exports = function(grunt) {
         serve: [
         'sass',
         'watch',
-        'shell:jekyllServe'
+        'shell:jekyllServe',
+        'browserSync'
         ],
         options: {
           logConcurrentOutput: true
@@ -64,7 +72,7 @@ module.exports = function(grunt) {
 
       browserSync: {
         files: {
-          src : ['_site/css/*.css', "*.html"]
+          src : ['_site/css/*.css', "*.html", "_layouts/*.html", "_posts/*.md", "_includes/*.html"],
         },
         options: {
           watchTask: true,
@@ -95,5 +103,5 @@ module.exports = function(grunt) {
     grunt.registerTask('serve', ['concurrent:serve']);
     // Register the grunt build task
     grunt.registerTask('build', ['shell:jekyllBuild', 'sass']);
-    grunt.registerTask('default', ['build', 'browserSync', 'watch']);
+    grunt.registerTask('default', ['sass','shell:jekyllBuild','browserSync','watch']);
   };
