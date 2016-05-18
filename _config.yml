@@ -24,4 +24,4 @@ exclude: ['node_modules', ‘css’, ‘_scss’]
 # tell Jekyll not to erase the CSS directory in the _site output folder each time it rebuilds by adding this to _config.yml
 keep_files: ['_site/css']
 
-# permalink: /:title
+permalink: /:categories/:title.html
