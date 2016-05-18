@@ -2,7 +2,16 @@
 layout: default
 ---
 <body>
-  <h1>Cats Cats Cats</h1>
-  Yo world!!!!!! Catttttttss......!!!!!!????!!??!!! :) :0 :0 !!! !!!!!!! !!!!!! YOOOOOOO!!!!!!!!!!!
-  CATTTTTTSSSS
+  <ul>
+    {% for post in site.posts %}
+    <li class="project">
+      <a href="{{ post.url }}">
+        <div class="thumb">
+          <img src="assets/img/ozzie.jpg" alt="">
+        </div>
+        <h3>{{ post.title}}</h3>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
 </body>
