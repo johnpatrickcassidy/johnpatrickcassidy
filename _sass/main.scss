@@ -1,3 +1,6 @@
+$headline:"prometo",Helvetica,sans-serif;
+$body:"soleto",Helvetica,sans-serif;
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -19,12 +22,16 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   vertical-align: baseline; }
 
 body {
-  font-family:"soleto",sans-serif;
+  font-family: $body;
 }
 
 h1, h2, h3 {
-  font-family:"prometo",sans-serif;
+  font-family: $headline;
   font-weight: 700;
+}
+
+h2 {
+  font-size: 1.618em;
 }
 
 a {
