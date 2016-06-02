@@ -117,16 +117,18 @@ ul {
   img {
     width: 100%
     }
+}
 
-  .image-caption {
-    font-weight: 500;
-    font-style: italic;
-    font-size: 0.75em;
-    color: $light-gray;
-    text-align: center;
-    border-top: 1px solid $light-gray;
-    padding-top: 1em;
-  }
+.caption {
+  font-weight: 500;
+  font-style: italic;
+  font-size: 0.75em;
+  color: $light-gray;
+  text-align: center;
+  border-top: 1px solid $light-gray;
+  padding-top: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 .post-content {
@@ -159,6 +161,6 @@ ul {
   }
 }
 
-.featured {
+.screencap {
   width: 100%;
 }
