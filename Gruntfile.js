@@ -76,6 +76,12 @@ module.exports = function(grunt) {
         },
         options: {
           watchTask: true,
+          notify: {
+            styles: {
+              top: 'auto',
+              bottom: '0'
+            }
+          },
           ghostMode: {
             clicks: true,
             scroll: true,
@@ -98,7 +104,7 @@ module.exports = function(grunt) {
     // grunt.loadNpmTasks('grunt-browser-sync');
 
     // Custom tasks
-    
+
     // Register the grunt serve task
     grunt.registerTask('serve', ['concurrent:serve']);
     // Register the grunt build task
