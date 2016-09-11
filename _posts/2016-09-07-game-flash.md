@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  Game Flash
+title:  Live Football & Basketball (2014)
+role: Product Design • Prototyping
 categories: projects
-img: assets/img/ozzieLong.jpg
+img: assets/img/leadImages/gameFlash.png
 ---
 
 ### Overview
