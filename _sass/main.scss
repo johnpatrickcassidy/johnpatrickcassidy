@@ -38,6 +38,7 @@ body {
 
 h1, h2, h3, h4 {
   font-family: $headline;
+  color: $dark-primary;
 }
 
 h1 {
@@ -49,8 +50,13 @@ h1 {
 h2 {
   font-size: 1.6175em;
   line-height: 1.082;
-  color: $dark-primary;
   font-weight: 700; 
+}
+
+h3 {
+  font-size: 1.2em;
+  line-height: 1.1;
+  font-weight: 600;
 }
 
 h4 {
@@ -64,7 +70,7 @@ h4 {
 
 p {
   font-family: $body;
-  font-size: 15px;
+  font-size: 0.9375em;
   color: $dark-primary;
   line-height: 1.375;
 }
@@ -75,8 +81,24 @@ h1 + h4 {
   margin-top: 8px;
 }
 
+h2 + h3 {
+  margin-top: 16px;
+}
+
 h2 + h4 {
   margin-top: 7px;
+}
+
+h2 + p {
+  margin-top: 8px;
+}
+
+h3 + p {
+  margin-top: 8px;
+}
+
+h4 + h2 {
+  margin-top: 32px;
 }
 
 h4 + p {
@@ -86,6 +108,32 @@ h4 + p {
 h4 + .thumb {
   margin-top: 12px; 
 }
+
+p + h2 {
+  margin-top: 32px;
+}
+
+p + h3 {
+  margin-top: 24px;
+}
+
+p + .image-wrapper {
+  margin-top: 10px;
+}
+
+.image-wrapper + h2 {
+  margin-top: 39px;
+}
+
+.image-wrapper + h3 {
+  margin-top: 24px;
+}
+
+.image-wrapper + p {
+  margin-top: 20px;
+}
+
+
 
 a {
   text-decoration: none;
@@ -226,30 +274,17 @@ nav {
     }
 }
 
-.image-caption {
-  font-weight: 500;
-  font-style: italic;
-  font-size: 0.75em;
-  color: $light-gray;
-  text-align: center;
-  border-top: 1px solid $light-gray;
-  padding-top: 1em;
-  margin-top: 1em;
-  margin-bottom: 1em;
-}
-
-.post-content {
-  margin-left: 1rem;
-  margin-right: 1rem;
-
-  p {
-    margin-bottom: 1em;
-  }
-
-  // p:last-of-type {
-  //   margin-bottom: 2em;
-  // }
-}
+// .image-caption {
+//   font-weight: 500;
+//   font-style: italic;
+//   font-size: 0.75em;
+//   color: $light-gray;
+//   text-align: center;
+//   border-top: 1px solid $light-gray;
+//   padding-top: 1em;
+//   margin-top: 1em;
+//   margin-bottom: 1em;
+// }
 
 .commentary {
   border-left: 6px solid $light-blue;
@@ -267,3 +302,41 @@ nav {
 .screencap {
   width: 100%;
 }
+
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.7%;
+  padding-top: 25px;
+  height: 0;
+}
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+@media (min-width: 380px) {
+  h1 {
+    font-size: calc(2.617em + 1vw)
+  }
+
+  h2 {
+    font-size: calc(1.6175em + 1vw)
+  }
+
+  h3 {
+    font-size: calc(1.2em + 1vw)
+  }
+
+  h4 {
+    font-size: calc(0.6875em + 1vw)
+  }
+
+  p {
+    font-size: calc(0.9375em + 1vw)
+  }
+}
+
