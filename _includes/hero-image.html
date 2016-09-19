@@ -1,0 +1,10 @@
+<!-- _includes/image.html -->
+<div>
+  {% if include.url %}
+  <a href="{{ include.url }}" title="{{ include.title }}" target="_blank">
+  {% endif %}
+    <img src="/{{ include.img }}" alt="{{ include.title }}" class="hero"/>
+  {% if include.url %}
+  </a>
+  {% endif %}
+</div>
