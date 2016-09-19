@@ -3,12 +3,17 @@ $headline:"source-sans-pro",Helvetica,sans-serif;
 $body:"source-sans-pro",Helvetica,sans-serif;
 
 // Colors
+$dark-bg: #0A1529;
 $dark-primary: #172540;
 $dark-gray: #686C73;
+$onDark-secondary: #778297;
 $light-gray: #76919E;
 $light-blue: #D9E9F5;
-$active-primary: #FF7270;
+$light-white: #F2F4F9;
+$active-primary: #FE4020;
 $transparent: rgba(0,0,0,0);
+
+
 
 *, *:before, *:after {
   box-sizing: inherit;
@@ -34,6 +39,8 @@ body {
   font-family: $body;
   padding: 16px 16px 32px 16px;
   background-color: #F4F4F4;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 h1, h2, h3, h4 {
@@ -45,6 +52,7 @@ h1 {
   font-weight: 900;
   font-size: 2.617em;
   line-height: 0.9314545;
+  word-spacing: 5000px;
 }
 
 h2 {
@@ -132,8 +140,6 @@ p + .image-wrapper {
 .image-wrapper + p {
   margin-top: 20px;
 }
-
-
 
 a {
   text-decoration: none;
@@ -317,10 +323,14 @@ nav {
   height: 100%;
 }
 
+.hero {
+  display: none;
+}
+
 
 @media (min-width: 380px) {
   h1 {
-    font-size: calc(2.617em + 1vw)
+    font-size: calc(2.617em + 1vw);
   }
 
   h2 {
@@ -339,4 +349,116 @@ nav {
     font-size: calc(0.9375em + 1vw)
   }
 }
+
+@media (min-width: 750px) {
+  h1 {
+    font-size: 4.71em;
+    color: $light-white;
+  }
+
+  h2 {
+    font-size: 2.62em;
+  }
+
+  h4 {
+    font-size: 1.1125em;
+  }
+
+  p {
+    font-size: 1.1125em;
+  }
+
+  .title {
+    background-color: $dark-bg;
+    padding: 36px 0 36px 4%;
+    margin: 0 -16px;
+    height: 398px;
+
+    h4 {
+      color: $onDark-secondary;
+    }
+  }
+
+  .hero-head {
+    padding-left: 4%;
+    padding-top: 44px;
+    padding-bottom: 44px;
+    margin-left: -16px;
+    background-color: #dde4e8;
+  }
+
+  .hero {
+    display: block;
+    position: absolute;
+    width: 70%;
+    top: 129px;
+    right: -20%;
+    max-width: 1190px;
+    max-height: 1020px;
+  }
+
+  .intro {
+    width: 46%;
+    max-width: 560px;
+  }
+
+  .headline {
+    height: 285px;
+  }
+
+  .sports {
+    position: absolute;
+    left: 0;
+    padding-left: 4%;
+    padding-right: 17px;
+    background-color: $active-primary;
+    z-index: 1;
+  }
+
+  .illustrated {
+    position: absolute;
+    width: 100%;
+    margin-left: -10px;
+    padding-left: 10px;
+    top: 264px;
+    background-color: $active-primary;
+  }
+
+  .redesign {
+    position: absolute;
+    top: 333px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .title {
+    padding-left: 15%;
+  }
+
+  .sports {
+    padding-left: 15%;
+  }
+
+  .hero-head {
+    padding-left: 15%;
+  }
+
+  .intro {
+    width: 40%;
+  }
+}
+
+@media (min-width: 1850px) {
+  .hero {
+    right: -10%;
+  }  
+}
+
+
+
+
+
+
+
+
 
