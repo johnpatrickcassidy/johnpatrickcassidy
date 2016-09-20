@@ -57,15 +57,15 @@ h1 {
 }
 
 h2 {
-  font-size: 1.6175em;
-  line-height: 1.082;
+  font-size: 2.4em;
+  line-height: 0.94;
   font-weight: 700; 
 }
 
-h3, h5 {
-  font-size: 1.2em;
-  line-height: 1.1;
-  font-weight: 600;
+h3 {
+  font-size: 1.6175em;
+  line-height: 1.082;
+  font-weight: 700;
 }
 
 h4 {
@@ -75,6 +75,12 @@ h4 {
   line-height: 1;
   text-transform: uppercase;
   font-weight: 700;
+}
+
+h5 {
+  font-size: 1.2em;
+  line-height: 1.1;
+  font-weight: 600;
 }
 
 p {
@@ -140,6 +146,28 @@ p + .image-wrapper {
 
 .image-wrapper + p {
   margin-top: 20px;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+.date {
+  margin-bottom: 32px;
+}
+
+h2 {
+  margin-top: 40px;
+  margin-bottom: 12px;
+}
+
+h3 {
+  margin-bottom: 8px;
+}
+
+h5 {
+  margin-top: 16px;
+  margin-bottom: 8px;
 }
 
 a {
@@ -276,8 +304,12 @@ nav {
 }
 
 .image-wrapper {
+  text-align: center;
+  width: 100%;
+
   img {
-    width: 100%
+      width: 100%;
+      max-width: 500px;
     }
 }
 
@@ -333,10 +365,15 @@ nav {
 }
 
 section {
-  clear: both;
-  margin-top: 80px;
+  clear: none;
+  margin-top: 0;
 }
 
+.highlight-odd {
+  background-color: #eaeaea;
+  margin: 24px -16px;
+  padding: 16px 16px 24px;
+}
 
 
 @media (min-width: 380px) {
@@ -345,7 +382,7 @@ section {
   }
 
   h2 {
-    font-size: calc(1.6175em + 1vw)
+    font-size: calc(2.4em + 1vw)
   }
 
   h3 {
@@ -358,6 +395,12 @@ section {
 
   p {
     font-size: calc(0.9375em + 1vw)
+  }
+}
+
+@media (min-width: 500px) {
+  h2 {
+    text-align: center;
   }
 }
 
@@ -479,6 +522,12 @@ section {
     clear: left;
   }
 
+  section {
+    clear: both;
+    margin-top: 80px;
+  }
+
+
   // .sports {
   //   z-index: 1;
   // }
@@ -505,6 +554,12 @@ section {
     z-index: -1;
   }
 
+  .highlight-odd {
+    background-color: rgba(0,0,0,0);
+    margin: 0;
+    padding: 0;
+  }
+
   .screenshot-sm {
     display: none;
   }
@@ -515,6 +570,13 @@ section {
     max-width: 1350px;
     height: auto;
     margin: 0 auto;
+  }
+
+  .image-wrapper {
+    img {
+        width: 100%;
+        max-width: 1800px;
+      }
   }
 
   .bullet {
