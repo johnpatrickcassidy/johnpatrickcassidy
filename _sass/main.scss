@@ -375,6 +375,11 @@ section {
   padding: 16px 16px 24px;
 }
 
+//fix for safari
+.sports, .illustrated {
+  display: block;
+}
+
 
 @media (min-width: 380px) {
   h1 {
