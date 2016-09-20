@@ -361,7 +361,12 @@ section {
   }
 }
 
-@media (min-width: 901px) {
+@media (min-width: 923px) {
+  body {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
   h1 {
     font-size: 4.71em;
     color: $light-white;
@@ -447,7 +452,7 @@ section {
   }
 
   .intro {
-    width: 46%;
+    width: 42%;
     padding: 44px 0;
     margin: 41px 0 0 0;
     max-width: 560px;
@@ -506,7 +511,8 @@ section {
 
   .screenshot-lg {
     display: block;
-    width: 1043px;
+    width: 100%;
+    max-width: 1350px;
     height: auto;
     margin: 0 auto;
   }
@@ -528,6 +534,8 @@ section {
     // text-align: right;
     // float: left;
     padding-right: 40px;
+    max-width: 300px;
+    text-align: right;
   }
 
   .description {
