@@ -62,7 +62,7 @@ h2 {
   font-weight: 700; 
 }
 
-h3 {
+h3, h5 {
   font-size: 1.6175em;
   line-height: 1.082;
   font-weight: 700;
@@ -77,17 +77,31 @@ h4 {
   font-weight: 700;
 }
 
-h5 {
-  font-size: 1.2em;
-  line-height: 1.1;
-  font-weight: 600;
-}
+// h5 {
+//   font-size: 1.2em;
+//   line-height: 1.1;
+//   font-weight: 600;
+// }
 
 p {
   font-family: $body;
   font-size: 0.9375em;
   color: $dark-primary;
   line-height: 1.375;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+ul {
+  padding: 0 48px;
+  margin: 16px 0;
+  // border-left: 3px solid $active-primary;
+}
+
+li {
+  font-size: 0.9375em;
+  line-height: 1.5em;
+  margin-bottom: 12px;
 }
 
 
@@ -215,6 +229,8 @@ nav {
     color: $dark-primary;
     font-weight: 700;
     position: relative;
+    padding-left: 0;
+    padding-right: 0;
 
     &--name {
       // padding-left: 1em;
@@ -309,7 +325,7 @@ nav {
 
   img {
       width: 100%;
-      max-width: 500px;
+      // max-width: 500px;
     }
 }
 
@@ -360,6 +376,15 @@ nav {
   display: none;
 }
 
+.elaborate {
+
+  > .screenshot-sm {
+    margin-top: 48px;
+    margin-bottom: 24px;
+  }
+
+}
+
 .screenshot-lg {
   display: none;
 }
@@ -370,9 +395,9 @@ section {
 }
 
 .highlight-odd {
-  background-color: #eaeaea;
-  margin: 24px -16px;
-  padding: 16px 16px 24px;
+  background-color: #e4e5e6;
+  margin: 24px calc(-7% - 16px);
+  padding: 16px calc(7% + 16px);
 }
 
 //fix for safari
@@ -380,34 +405,35 @@ section {
   display: block;
 }
 
+@media (min-width: 500px) {
+  body {
+    padding-left: 7%;
+    padding-right: 7%;
+  }
 
-@media (min-width: 380px) {
   h1 {
-    font-size: calc(2.617em + 1vw);
+    font-size: calc(2.617em + 3.4vw);
   }
 
   h2 {
-    font-size: calc(2.4em + 1vw)
+    font-size: calc(2.4em + 1vw);
+    text-align: center;
   }
 
   h3 {
-    font-size: calc(1.2em + 1vw)
+    font-size: calc(1.2em + 1vw);
   }
 
   h4 {
-    font-size: calc(0.6875em + 1vw)
+    font-size: calc(0.6875em + 1vw);
   }
 
-  p {
-    font-size: calc(0.9375em + 1vw)
+  p, li {
+    font-size: calc(0.9375em + 1vw);
   }
+
 }
 
-@media (min-width: 500px) {
-  h2 {
-    text-align: center;
-  }
-}
 
 @media (min-width: 923px) {
   body {
@@ -436,9 +462,10 @@ section {
   h5 {
     font-size: 1.8em;
     font-weight: 700;
+    margin-top: 0;
   }
 
-  p {
+  p, li {
     font-size: 1em;
     line-height: 1.5;
   }
@@ -542,7 +569,7 @@ section {
     position: absolute;
     height: 75px;
     width: 100%;
-    top: 195px;
+    top: 212px;
     left: 0;
     background: $active-primary;
     z-index: -1;
@@ -553,7 +580,7 @@ section {
     position: absolute;
     height: 75px;
     width: 100%;
-    top: 265px;
+    top: 275px;
     left: 0;
     background: $active-primary;
     z-index: -1;
@@ -586,13 +613,16 @@ section {
 
   .bullet {
     text-align: center;
+    margin-bottom: 40px;
+    margin-top: 104px;
   }
 
   .takeaway {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 48px;
+    flex-wrap: wrap;
+    margin-top: 32px;
     margin-bottom: 72px;
   }
 
@@ -603,14 +633,34 @@ section {
     padding-right: 40px;
     max-width: 300px;
     text-align: right;
+    margin-bottom: 40px //needs to match .description margin bottom to keep flex vertical centering
   }
 
   .description {
     // float: right;
     // width: 60%;
     padding-left: 40px;
-    border-left: 1px solid $extra-light-gray;
+    border-left: 3px solid $extra-light-gray;
     max-width: 448px;
+    margin-bottom: 40px;
+  }
+
+  .line-break {
+    width: 100%;
+  }
+
+  .elaborate {
+
+    p, ul {
+      max-width: 640px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    > .screenshot-lg {
+      margin-top: 48px;
+      margin-bottom: 24px;
+    }
   }
 }
 
