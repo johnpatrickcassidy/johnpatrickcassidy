@@ -100,7 +100,7 @@ p {
   color: $dark-primary;
   line-height: 1.375;
   margin-top: 16px;
-  margin-bottom: 16px;
+  // margin-bottom: 16px;
 }
 
 ul {
@@ -391,9 +391,13 @@ section {
   margin-top: 0;
 }
 
+.highlight-even {
+  margin: 32px 0;
+}
+
 .highlight-odd {
   // background-color: #e4e5e6;
-  margin: 24px calc(-7% - 16px) 0;
+  margin: 24px calc(-7% - 16px) 32px;
   padding: 0 calc(7% + 16px) 16px;
 }
 
