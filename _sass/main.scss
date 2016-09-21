@@ -56,21 +56,21 @@ h1, h2, h3, h4 {
 
 h1 {
   font-weight: 900;
-  font-size: 2.617em;
+  font-size: 2.617rem;
   line-height: 0.9314545;
   word-spacing: 5000px;
   margin-bottom: 10px;
 }
 
 h2 {
-  font-size: 2.4em;
+  font-size: 2.4rem;
   line-height: 0.94;
   font-weight: 700;
   margin-top: 40px;
 }
 
 h3, h5 {
-  font-size: 1.6175em;
+  font-size: 1.6175rem;
   line-height: 1.082;
   font-weight: 700;
 }
@@ -85,7 +85,7 @@ h5 {
 }
 
 h4 {
-  font-size: 0.6875em;
+  font-size: 0.6875rem;
   color: $dark-gray;
   letter-spacing: 1.25px;
   line-height: 1;
@@ -101,7 +101,7 @@ h4 {
 
 p {
   font-family: $body;
-  font-size: 0.9375em;
+  font-size: 0.9375rem;
   color: $dark-primary;
   line-height: 1.375;
   margin-top: 16px;
@@ -115,7 +115,7 @@ ul {
 }
 
 li {
-  font-size: 0.9375em;
+  font-size: 0.9375rem;
   line-height: 1.5em;
   margin-bottom: 12px;
 }
@@ -189,6 +189,19 @@ p + .image-wrapper {
 .project {
   list-style: none;
   margin-bottom: 40px;
+}
+
+.name {
+  color: $dark-primary;
+  word-spacing: 5000px;
+}
+
+.project-list {
+  padding: 0;
+}
+
+a > h3 {
+  margin-top: 56px;
 }
 
 nav {
@@ -419,24 +432,24 @@ section {
   }
 
   h1 {
-    font-size: calc(2.617em + 3.4vw);
+    font-size: calc(2.617rem + 3.4vw);
   }
 
   h2 {
-    font-size: calc(2.4em + 1vw);
+    font-size: calc(2.4rem + 1vw);
     // text-align: center;
   }
 
   h3 {
-    font-size: calc(1.2em + 1vw);
+    font-size: calc(1.2rem + 1vw);
   }
 
   h4 {
-    font-size: calc(0.6875em + 1vw);
+    font-size: calc(0.6875rem + 1vw);
   }
 
   p, li {
-    font-size: calc(0.9375em + 1vw);
+    font-size: calc(0.9375rem + 1vw);
   }
 
   .screenshot-sm {
@@ -444,7 +457,6 @@ section {
   }
 
 }
-
 
 @media (min-width: 923px) {
   body {
@@ -479,6 +491,17 @@ section {
   p, li {
     font-size: 1em;
     line-height: 1.5;
+  }
+
+  .project-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-around;
+  }
+
+  .project {
+    width: 48%;
   }
 
   .title {
