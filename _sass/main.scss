@@ -427,7 +427,7 @@ section {
 }
 
 //fix for safari
-.sports, .illustrated, .impact--apps {
+.sports, .illustrated, .impact--apps, .impact--kids {
   display: block;
 }
 
@@ -563,10 +563,6 @@ section {
       height: 355px;
     }
 
-    // h1 {
-    //   word-spacing: 0;
-    // }
-
     h4 {
       color: $onDark-secondary;
       // color: #ef8589;
@@ -582,6 +578,32 @@ section {
     // background-color: #cc0008;
     margin-top: -28px;
     height: 452px;
+    width: 100%;
+    z-index: -1;
+  }
+
+  .title--kids {
+    padding-top: 36px;
+    padding-bottom: 36px;
+    max-height: 750px;
+    overflow: hidden;
+
+    .headline {
+      height: 224px;
+    }
+
+    h4 {
+      color: #fff;
+    }
+  }
+
+  .title--kids:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    background-color: #2785D7;
+    margin-top: -28px;
+    height: 325px;
     width: 100%;
     z-index: -1;
   }
@@ -647,7 +669,7 @@ section {
 
   section {
     clear: both;
-    margin-top: 80px;
+    margin-top: 40px;
   }
 
 
@@ -695,6 +717,21 @@ section {
     z-index: -1;
   }
 
+  .impact--kids {
+    color: #2785D7;
+  }
+
+  .impact--kids:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: 279px;
+    height: 74px;
+    left: 0;
+    background-color: #fff;
+    z-index: -1;
+  }
+
   .highlight-odd {
     background-color: rgba(0,0,0,0);
     margin: 0;
@@ -728,7 +765,7 @@ section {
   .bullet {
     text-align: center;
     margin-bottom: 40px;
-    margin-top: 104px;
+    margin-top: 24px;
   }
 
   .takeaway {
@@ -785,6 +822,14 @@ section {
 
   .title--apps {
     max-height: 950px;
+  }
+
+  section {
+    margin-top: 80px;
+  }
+
+  .bullet {
+    margin-top: 96px;
   }
 }
 
