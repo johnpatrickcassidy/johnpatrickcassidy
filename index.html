@@ -9,11 +9,11 @@ layout: default
     {% for post in site.posts %}
     <li class="project">
       <a href="{{ post.url }}">
-        <h3>{{ post.title }}</h2>
-        <h4>{{ post.role }}</h4>
         <div class="thumb">
           <img src="{{ post.img }}" alt="">
         </div>
+        <h3>{{ post.title }}</h2>
+        <h4>{{ post.role }}</h4>
       </a>
     </li>
     {% endfor %}
