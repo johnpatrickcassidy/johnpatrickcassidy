@@ -57,7 +57,7 @@ h1 {
   font-weight: 900;
   font-size: 2.617rem;
   line-height: 0.9314545;
-  word-spacing: 5000px;
+  // word-spacing: 5000px;
   margin-bottom: 10px;
 }
 
@@ -421,8 +421,12 @@ section {
 }
 
 //fix for safari
-.sports, .illustrated {
+.sports, .illustrated, .impact--apps {
   display: block;
+}
+
+.whitespace {
+  white-space: nowrap;
 }
 
 @media (min-width: 500px) {
@@ -522,11 +526,8 @@ section {
   }
 
   .title {
-    // background-color: $dark-bg;
     padding-top: 36px;
     padding-bottom: 36px;
-    // margin: 0 -16px;
-    // height: 398px;
     max-height: 850px;
     overflow: hidden;
 
@@ -542,6 +543,36 @@ section {
     background-color: $dark-bg;
     margin-top: -28px;
     height: 392px;
+    width: 100%;
+    z-index: -1;
+  }
+
+  .title--apps {
+    padding-top: 36px;
+    padding-bottom: 36px;
+    max-height: 1000px;
+    overflow: hidden;
+
+    .headline {
+      height: 355px;
+    }
+
+    // h1 {
+    //   word-spacing: 0;
+    // }
+
+    h4 {
+      color: $onDark-secondary;
+    }
+  }
+
+  .title--apps:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    background-color: #0E182E;
+    margin-top: -28px;
+    height: 452px;
     width: 100%;
     z-index: -1;
   }
@@ -571,7 +602,7 @@ section {
     // right: -20%;
     display: block;
     float: right;
-    width: 57%;
+    width: 50%;
     max-width: 972px;
     // max-height: 830px;
     max-height: 2239px;
@@ -634,6 +665,17 @@ section {
     top: 275px;
     left: 0;
     background: $active-primary;
+    z-index: -1;
+  }
+
+  .impact--apps:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: 279px;
+    height: 145px;
+    left: 0;
+    background: #D9272E;
     z-index: -1;
   }
 
@@ -712,6 +754,16 @@ section {
       margin-top: 48px;
       margin-bottom: 24px;
     }
+  }
+}
+
+@media (min-width: 1050px) {
+  .hero-img {
+    width: 57%;
+  }
+
+  .title--apps {
+    max-height: 950px;
   }
 }
 
