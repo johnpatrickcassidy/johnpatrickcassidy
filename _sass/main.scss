@@ -392,6 +392,11 @@ nav {
   // margin: 0 -15px;
 }
 
+.video--portrait {
+  width: 70%;
+  margin: 0 auto;
+}
+
 .elaborate {
 
   > .screenshot-sm {
@@ -563,6 +568,7 @@ section {
 
     h4 {
       color: $onDark-secondary;
+      // color: #ef8589;
     }
   }
 
@@ -571,6 +577,8 @@ section {
     position: absolute;
     left: 0;
     background-color: #0E182E;
+    // background-color: #D9272E;
+    // background-color: #cc0008;
     margin-top: -28px;
     height: 452px;
     width: 100%;
@@ -668,6 +676,12 @@ section {
     z-index: -1;
   }
 
+  .impact--apps {
+    color: #fff;
+    // color: #D9272E;
+    // color: #cc0008;
+  }
+
   .impact--apps:after {
     content: "";
     position: absolute;
@@ -675,7 +689,8 @@ section {
     top: 279px;
     height: 145px;
     left: 0;
-    background: #D9272E;
+    background-color: #D9272E;
+    // background-color: #fff;
     z-index: -1;
   }
 
@@ -702,6 +717,11 @@ section {
         width: 100%;
         max-width: 1800px;
       }
+  }
+
+  .video--portrait {
+    width: 30%;
+    margin: 0 auto;
   }
 
   .bullet {
