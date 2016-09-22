@@ -601,7 +601,8 @@ section {
     content: "";
     position: absolute;
     left: 0;
-    background-color: #2785D7;
+    // background-color: #2785D7;
+    background-color: #e7233c;
     margin-top: -28px;
     height: 325px;
     width: 100%;
@@ -718,7 +719,8 @@ section {
   }
 
   .impact--kids {
-    color: #2785D7;
+    // color: #2785D7;
+    color: #fff;
   }
 
   .impact--kids:after {
@@ -729,6 +731,7 @@ section {
     height: 74px;
     left: 0;
     background-color: #fff;
+    background-color: #2785d7;
     z-index: -1;
   }
 
