@@ -251,6 +251,7 @@ nav {
       border-bottom: none;
       height: 48px;
       width: 48px;
+      // @TODO: replace avatar with rotating GIF avatars
       background: url("../assets/img/avatarJohn.png") no-repeat left top;
       background-size: 48px;
       margin-bottom: 0;
@@ -384,6 +385,11 @@ nav {
   height: 100%;
 }
 
+iframe {
+  display: block;
+  margin: 0 auto;
+}
+
 .hero-img {
   display: none;
 }
@@ -427,7 +433,7 @@ section {
 }
 
 //fix for safari
-.sports, .illustrated, .impact--apps, .impact--kids {
+.sports, .illustrated, .impact--apps, .impact--kids, .impact--vault {
   display: block;
 }
 
@@ -609,6 +615,32 @@ section {
     z-index: -1;
   }
 
+  .title--vault {
+    padding-top: 36px;
+    padding-bottom: 36px;
+    max-height: 750px;
+    overflow: hidden;
+
+    .headline {
+      height: 224px;
+    }
+
+    h4 {
+      color: #fff;
+    }
+  }
+
+  .title--vault:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    background-color: #091023;
+    margin-top: -28px;
+    height: 325px;
+    width: 100%;
+    z-index: -1;
+  }
+
   .hero-head {
     margin: 0 -9999rem;
     padding: 44px 9999rem;
@@ -732,6 +764,21 @@ section {
     left: 0;
     background-color: #fff;
     background-color: #2785d7;
+    z-index: -1;
+  }
+
+  .impact--vault {
+    color: #fff;
+  }
+
+  .impact--vault:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: 279px;
+    height: 74px;
+    left: 0;
+    background-color: #89671E;
     z-index: -1;
   }
 
