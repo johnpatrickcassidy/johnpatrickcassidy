@@ -449,6 +449,14 @@ section {
   white-space: nowrap;
 }
 
+.invision {
+  display: none;
+}
+
+.video--portrait.invision {
+  display: block;
+}
+
 @media (min-width: 500px) {
   body {
     padding-left: 7%;
@@ -482,6 +490,14 @@ section {
 
   .screenshot-sm {
     margin: 0 -8.5%;
+  }
+
+  .invision {
+    display: block;
+  }
+
+  .video--portrait.invision {
+    display: none;
   }
 
 }
