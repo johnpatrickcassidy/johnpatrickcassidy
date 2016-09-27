@@ -441,7 +441,7 @@ section {
 }
 
 //fix for safari
-.sports, .illustrated, .impact--apps, .impact--kids, .impact--vault {
+.sports, .illustrated, .impact--apps, .impact--kids, .impact--vault, .impact--gameflash {
   display: block;
 }
 
@@ -665,6 +665,32 @@ section {
     z-index: -1;
   }
 
+  .title--gameflash {
+    padding-top: 36px;
+    padding-bottom: 36px;
+    max-height: 750px;
+    overflow: hidden;
+
+    .headline {
+      height: 224px;
+    }
+
+    h4 {
+      color: #fff;
+    }
+  }
+
+  .title--gameflash:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    background-color: #091023;
+    margin-top: -28px;
+    height: 325px;
+    width: 100%;
+    z-index: -1;
+  }
+
   .hero-head {
     margin: 0 -9999rem;
     padding: 44px 9999rem;
@@ -796,6 +822,21 @@ section {
   }
 
   .impact--vault:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: 279px;
+    height: 74px;
+    left: 0;
+    background-color: #89671E;
+    z-index: -1;
+  }
+
+  .impact--gameflash {
+    color: #fff;
+  }
+
+  .impact--gameflash:after {
     content: "";
     position: absolute;
     width: 100%;
