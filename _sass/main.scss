@@ -441,7 +441,7 @@ section {
 }
 
 //fix for safari
-.sports, .illustrated, .impact--apps, .impact--kids, .impact--vault, .impact--gameflash {
+.sports, .illustrated, .impact--apps, .impact--kids, .impact--vault, .impact--gameflash, .impact--mograph {
   display: block;
 }
 
@@ -476,7 +476,7 @@ section {
 }
 
 .gameflashWrapper {
-  max-width: 498px;
+  max-width: 476px;
 }
 
 @media (min-width: 500px) {
@@ -697,8 +697,8 @@ section {
       height: 224px;
     }
 
-    h4 {
-      color: #fff;
+    h1, h4 {
+      color: #e3d8a3;
     }
   }
 
@@ -706,7 +706,33 @@ section {
     content: "";
     position: absolute;
     left: 0;
-    background-color: #091023;
+    background-color: #503e1d;
+    margin-top: -28px;
+    height: 325px;
+    width: 100%;
+    z-index: -1;
+  }
+
+  .title--mograph {
+    padding-top: 36px;
+    padding-bottom: 36px;
+    max-height: 750px;
+    overflow: hidden;
+
+    .headline {
+      height: 224px;
+    }
+
+    h1, h4 {
+      color: #e3d8a3;
+    }
+  }
+
+  .title--mograph:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    background-color: #503e1d;
     margin-top: -28px;
     height: 325px;
     width: 100%;
@@ -855,17 +881,32 @@ section {
   }
 
   .impact--gameflash {
-    color: #fff;
+    color: #e3d8a3;
   }
 
   .impact--gameflash:after {
     content: "";
     position: absolute;
     width: 100%;
-    top: 279px;
-    height: 74px;
+    top: 209px;
+    height: 145px;
     left: 0;
-    background-color: #89671E;
+    background-color: #5D8A3A;
+    z-index: -1;
+  }
+
+  .impact--mograph {
+    color: #e3d8a3;
+  }
+
+  .impact--mograph:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: 209px;
+    height: 145px;
+    left: 0;
+    background-color: #5D8A3A;
     z-index: -1;
   }
 
@@ -986,7 +1027,7 @@ section {
   }
 
   .gfPrototypes .screencap {
-    margin-top: -30px;
+    margin-top: -27px;
   }
 }
 

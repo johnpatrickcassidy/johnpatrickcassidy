@@ -40,11 +40,11 @@ img: assets/img/leadImages/gameFlash.png
     </div>
   </div>
   <div class="highlight-odd">
-    <div class="screenshot-sm">{% include image.html img="assets/img/projects/siVault/vaultStylePersona.png" url="/assets/img/projects/siVault/vaultStylePersona.png" title="" caption="" %}</div>
-    <div class="screenshot-lg">{% include image.html img="assets/img/projects/siVault/vaultStylePersona.png" url="/assets/img/projects/siVault/vaultStylePersona.png" title="" caption="" %}</div>
+    <div class="screenshot-sm">{% include image.html img="assets/img/projects/gameFlash/statAnalysis.png" url="/assets/img/projects/gameFlash/statAnalysis.png" title="" caption="" %}</div>
+    <div class="screenshot-lg">{% include image.html img="assets/img/projects/gameFlash/statAnalysis.png" url="/assets/img/projects/gameFlash/statAnalysis.png" title="" caption="" %}</div>
     <div class="takeaway">
-      <h5 class="example">Style Tiles and Personas</h5>
-      <p class="description">As the lead UX designer on the project, I introduced the team to styles tiles and personas as complementary discover methods to uncover unique visual explorations and user flows throughout a person's Vault experience.</p>
+      <h5 class="example">Statistical Analysis of Game Data</h5>
+      <p class="description">I knew lorem ipsum wasn't going to cut it while mocking up the interface. So, in order to design with realistic data, I performed statistical analysis of NFL and MLB game data over multiple seasons to understand the distribution of the most important UI data point. This helped our team anticipate the many edge cases of the experience.</p>
     </div>
   </div>
 </section>

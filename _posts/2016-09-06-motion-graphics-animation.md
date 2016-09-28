@@ -5,3 +5,28 @@ role: Motion Design • Animation
 categories: projects
 img: assets/img/leadImages/mograph.png
 ---
+
+<section>
+  <h2 class="bullet">Motion Graphics & Animation</h2>
+  <div class="highlight-odd">
+    <video class="screencap" src="/assets/videos/motionGraphics/quickPitch-introBumper.mp4" poster="" loop playsinline muted controls></video>
+  </div>
+  <div class="highlight-even">
+    <video class="screencap" src="/assets/videos/motionGraphics/siNow-introBumper.mp4" poster="" loop playsinline muted controls></video>
+  </div>
+  <div class="highlight-odd">
+    <video class="screencap" src="/assets/videos/motionGraphics/mmqbTrainingCamp-introBumper.mp4" poster="" loop playsinline muted controls></video>
+  </div>
+  <div class="highlight-even">
+    <video class="screencap" src="/assets/videos/motionGraphics/aroundTheWorld-introBumper.mp4" poster="" loop playsinline muted controls></video>
+  </div>
+  <div class="highlight-odd">
+    <video class="screencap" src="/assets/videos/motionGraphics/fastBreak-introBumper.mp4" poster="" loop playsinline muted controls></video>
+  </div>
+  <div class="highlight-even">
+    <video class="screencap" src="/assets/videos/motionGraphics/risingStars-introBumper.mp4" poster="" loop playsinline muted controls></video>
+  </div>
+  <div class="highlight-odd">
+    <video class="screencap" src="/assets/videos/motionGraphics/trainingForSochi-introBumper.mp4" poster="" loop playsinline muted controls></video>
+  </div>
+</section>
