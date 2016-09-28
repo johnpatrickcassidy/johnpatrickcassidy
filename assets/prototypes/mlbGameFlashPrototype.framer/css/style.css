@@ -1,0 +1,17 @@
+* {
+  margin:0;
+  padding:0;
+  border:none;
+  -webkit-user-select:none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0)
+}
+
+body {
+  overflow-x: hidden;
+  width: 320px;
+  /*background: black url('../framer/background.png') repeat scroll top left;*/
+  background-color: #20252C;
+  font: 28px/1em "Helvetica";
+  color: #FFF;
+}
+

@@ -457,6 +457,28 @@ section {
   display: block;
 }
 
+.gfPrototypes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gfPrototypes .screenshot-sm, .gfPrototypes .screenshot-lg {
+  display: none;
+}
+
+.gfPrototypes .screencap {
+  max-width: 100%;
+}
+
+.gfPrototypes + .takeaway {
+  clear: both;
+}
+
+.gameflashWrapper {
+  max-width: 498px;
+}
+
 @media (min-width: 500px) {
   body {
     padding-left: 7%;
@@ -952,6 +974,20 @@ section {
   .title {
     max-height: 770px;
   }
+
+  .gfPrototypes .screenshot-lg {
+    display: block;
+    max-width: 728px;
+    // box-shadow: 0px 15px 79px 0px rgba(0,0,0,0.11);
+    // float: left;
+    // margin-top: -23px;
+    // margin-bottom: -23px;
+    margin: 0;
+  }
+
+  .gfPrototypes .screencap {
+    margin-top: -30px;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -966,6 +1002,7 @@ section {
   // .hero-head {
   //   padding-left: 15%;
   // }
+
 
   .intro {
     width: 40%;
