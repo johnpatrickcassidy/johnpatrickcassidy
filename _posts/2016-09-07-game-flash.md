@@ -12,18 +12,18 @@ img: assets/img/leadImages/gameFlash.png
   <h4 class="date">June 2014-May 2015</h4>
   <div class="intro">
     <h3>Problem</h3>
-    <p>Wanting to reclaim ground as a leading sports news destination, SI sought to improve the second screen experience in order to showcase the brand as more than just (quickly out-of-date) magazine live scoring and play updates that keep users up to the minute on their favorite teams</p>
+    <p>Wanting to reclaim ground as a leading sports destination, Sports Illustrated sought to improve its second screen experience in order to showcase the brand as more than just a magazine.</p>
     <h3>Solution</h3>
-    <p>Design and develop mobile-first game coverage by bringing two of America’s most popular sports, football and baseball, to life with fun and useful visualizations while events unfolded on the field.</p>
+    <p>Design and develop mobile-first game coverage by bringing two of America’s most popular sports, football and baseball, to life with fun and useful visualizations while events unfolded live on the field.</p>
   </div>
 </div>
 <section>
   <h2 class="bullet">My Role</h2>
   <div class="highlight-odd">
-    <video class="screencap" src="/assets/videos/gameflashScreencap.mp4" poster="" loop autoplay playsinline muted controls></video>
+    <video class="screencap" src="/assets/videos/gameflashScreencap.mp4" poster="" controls></video>
     <div class="takeaway">
       <h5 class="example">Studying the Tape</h5>
-      <p class="description">One of the trickest aspects of recreating a live game experience is accounting for all the edge cases and quirks that occur during the course of play. In order to design a robust experience, I immersed myself in both the sports data APIs as well as spending a good deal of time watching the experience unfold alongside live video footage of the event.</p>
+      <p class="description">One of the trickest aspects of recreating a live game experience is accounting for all the edge cases and quirks that occur during the course of play. In order to design a robust experience, I immersed myself in both the sports data APIs and also spent hours watching the experience unfold alongside live video footage of the game.</p>
     </div>
   </div>
   <div class="highlight-even">
@@ -44,7 +44,7 @@ img: assets/img/leadImages/gameFlash.png
     <div class="screenshot-lg">{% include image.html img="assets/img/projects/gameFlash/statAnalysis.png" url="/assets/img/projects/gameFlash/statAnalysis.png" title="" caption="" %}</div>
     <div class="takeaway">
       <h5 class="example">Statistical Analysis of Game Data</h5>
-      <p class="description">I knew lorem ipsum wasn't going to cut it while mocking up the interface. So, in order to design with realistic data, I performed statistical analysis of NFL and MLB game data over multiple seasons to understand the distribution of the most important UI data point. This helped our team anticipate the many edge cases of the experience.</p>
+      <p class="description">I knew lorem ipsum wasn't going to cut it while mocking up the interface. So, in order to design with realistic data, I performed statistical analysis of NFL and MLB game data over multiple seasons to understand the distribution of the most important UI data points. This helped our team anticipate the many edge cases of the experience.</p>
     </div>
   </div>
 </section>
