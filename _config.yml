@@ -9,7 +9,7 @@
 title: John Cassidy
 email: johnpatrickcassidy@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-baseurl: "http://johnpatrickcassidy.com" # the subpath of your site, e.g. /blog
+baseurl: "/johnpatrickcassidy" # the subpath of your site, e.g. /blog
 url: "http://johnpatrickcassidy.com" # the base hostname & protocol for your site
 twitter_username: JohnPCassidy
 github_username:  johnpatrickcassidy
