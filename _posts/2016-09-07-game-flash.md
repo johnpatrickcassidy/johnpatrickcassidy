@@ -20,7 +20,7 @@ img: assets/img/leadImages/gameFlash.png
 <section>
   <h2 class="bullet">My Role</h2>
   <div class="highlight-odd">
-    <video class="screencap" src="/assets/videos/gameflashScreencap.mp4" poster="" controls></video>
+    <video class="screencap" src="/assets/videos/gameflashScreencap.mp4" poster="/assets/img/projects/gameFlash/poster-liveFootage.jpg" controls></video>
     <div class="takeaway">
       <h5 class="example">Studying the Tape</h5>
       <p class="description">One of the trickest aspects of recreating a live game experience is accounting for all the edge cases and quirks that occur during the course of play. In order to design a robust experience, I immersed myself in both the sports data APIs and also spent hours watching the experience unfold alongside live video footage of the game.</p>
@@ -31,7 +31,7 @@ img: assets/img/leadImages/gameFlash.png
       <div class="screenshot-sm">{% include image.html img="assets/img/projects/gameFlash/usabilityResults.png" url="/assets/img/projects/gameFlash/usabilityResults.png" title="" caption="" %}</div>
       <div class="screenshot-lg">{% include image.html img="assets/img/projects/gameFlash/usabilityResults.png" url="/assets/img/projects/gameFlash/usabilityResults.png" title="" caption="" %}</div>
       <div class="gameflashWrapper">
-        <video class="screencap" src="/assets/videos/gameflashPrototype.mov" poster="" loop autoplay playsinline muted controls></video>
+        <video class="screencap" src="/assets/videos/gameflashPrototype.mov" poster="/assets/img/projects/gameFlash/poster-prototype.png" loop autoplay playsinline muted controls></video>
       </div>
     </div>
     <div class="takeaway">
