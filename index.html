@@ -11,7 +11,12 @@ layout: default
     <li class="project">
       <a href="{{ post.url }}">
         <div class="thumb">
-          <img src="{{ post.img }}" alt="">
+          <img 
+            srcset="{{ post.img }}-large.png 1360w,
+                    {{ post.img }}-medium.png 884w,
+                    {{ post.img }}-small.png 503w"
+            sizes="(min-width: 923px) 100vw, 50%" 
+            src="{{ post.img }}.png" alt="">
         </div>
         <h3>{{ post.title }}</h2>
         <h4>{{ post.role }}</h4>

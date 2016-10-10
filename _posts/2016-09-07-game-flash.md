@@ -3,7 +3,7 @@ layout: post
 title:  Live Football & Baseball (2014)
 role: Product Design • Prototyping
 categories: projects
-img: assets/img/leadImages/gameFlash.png
+img: assets/img/leadImages/gameFlash
 ---
 
 <div class="title--gameflash">
